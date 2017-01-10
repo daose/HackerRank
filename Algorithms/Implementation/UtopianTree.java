@@ -10,8 +10,6 @@ public class Solution {
     }
     
     public static void printHeight(int n){
-        int height = 1;
-        //TODO:: one equation
-        System.out.println(height);
+        System.out.println(((1 << ((n >> 1) + 1)) - 1) << (n & 1));
     }
 }
